@@ -171,6 +171,26 @@ Full analysis: [`docs/ROOT_CAUSE.md`](docs/ROOT_CAUSE.md).
 - Consider [contributing the fix upstream](https://github.com/MarkusPfundstein/mcp-obsidian)
   so patching is eventually unnecessary.
 
+## Built on / Credits
+
+This project is a setup guide and a patch — it does **not** include or
+redistribute the tools below. It only helps you configure them and fixes a bug
+in one of them. All credit for the underlying software goes to their authors:
+
+- **[mcp-obsidian](https://github.com/MarkusPfundstein/mcp-obsidian)** by Markus
+  Pfundstein (MIT) — the MCP server this project configures and patches.
+- **[Obsidian Local REST API](https://github.com/coddingtonbear/obsidian-local-rest-api)**
+  by Adam Coddington (MIT) — the Obsidian plugin that exposes each vault over REST.
+- **[Obsidian](https://obsidian.md)** and **[Claude Desktop](https://claude.ai/download)** —
+  the apps this connects together.
+
+Both `mcp-obsidian` and the Local REST API plugin are MIT-licensed, which is what
+makes it fine to reference them and to patch a locally-installed copy. If you find
+this useful, consider starring their repos too — and ideally the port fix here
+gets contributed back upstream so patching is no longer needed.
+
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE) — covers this repository's own contents (the guide, the analysis,
+and the patch script). The referenced tools are licensed separately by their
+respective authors.
