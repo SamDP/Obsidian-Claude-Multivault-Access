@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "mcp-obsidian-vault-a": {
+      "command": "uvx",
+      "args": ["mcp-obsidian"],
+      "env": {
+        "OBSIDIAN_API_KEY": "REPLACE_WITH_VAULT_A_API_KEY",
+        "OBSIDIAN_HOST": "127.0.0.1",
+        "OBSIDIAN_PORT": "27124"
+      }
+    },
+    "mcp-obsidian-vault-b": {
+      "command": "uvx",
+      "args": ["mcp-obsidian"],
+      "env": {
+        "OBSIDIAN_API_KEY": "REPLACE_WITH_VAULT_B_API_KEY",
+        "OBSIDIAN_HOST": "127.0.0.1",
+        "OBSIDIAN_PORT": "27125"
+      }
+    },
+    "mcp-obsidian-vault-c": {
+      "command": "uvx",
+      "args": ["mcp-obsidian"],
+      "env": {
+        "OBSIDIAN_API_KEY": "REPLACE_WITH_VAULT_C_API_KEY",
+        "OBSIDIAN_HOST": "127.0.0.1",
+        "OBSIDIAN_PORT": "27126"
+      }
+    }
+  }
+}
