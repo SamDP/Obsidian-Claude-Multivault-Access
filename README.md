@@ -31,8 +31,10 @@ Two things are needed to run multiple vaults:
 
 ## Prerequisites
 
-- **Obsidian** with the **"Local REST API"** community plugin installed and enabled
-  in *each* vault you want to connect.
+- **Obsidian** with the **"Local REST API"** community plugin by **Adam Coddington**
+  (displayed as *"Local REST API with MCP"*, id `obsidian-local-rest-api` —
+  [GitHub](https://github.com/coddingtonbear/obsidian-local-rest-api)) installed
+  and enabled in *each* vault you want to connect.
 - **Claude Desktop** (this uses `claude_desktop_config.json`; local MCP servers do
   **not** work in the claude.ai web app or mobile).
 - **[uv](https://docs.astral.sh/uv/)** installed (provides `uvx`), which runs
@@ -48,9 +50,10 @@ as you like — just keep each port unique.
 
 ### 1. Enable the Local REST API plugin in every vault
 
-In each vault: **Settings → Community plugins → Browse → "Local REST API" →
-Install → Enable**. Then open its settings and **copy the API key** — you'll need
-one per vault.
+In each vault: **Settings → Community plugins → Browse**, search
+**"Local REST API"**, install the one by **Adam Coddington** (shows as
+*"Local REST API with MCP"*, id `obsidian-local-rest-api`) → **Install → Enable**.
+Then open its settings and **copy the API key** — you'll need one per vault.
 
 ### 2. Give each vault a unique port
 
@@ -191,6 +194,7 @@ gets contributed back upstream so patching is no longer needed.
 
 ## License
 
-[MIT](LICENSE) — covers this repository's own contents (the guide, the analysis,
-and the patch script). The referenced tools are licensed separately by their
-respective authors.
+Released under the [MIT License](LICENSE) — you're free to use, modify, and share
+the guide, the analysis, and the patch script. The tools this builds on
+(`mcp-obsidian` and the Local REST API plugin) are MIT-licensed separately by
+their own authors.
